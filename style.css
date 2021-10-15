@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+div.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.main .text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.main .title_area{
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main .text .title_area .title h1{
+    font-size: 40pt;
+    text-shadow: rgba(0, 0, 0, 0.726) 0 0 10px;
+}
+
+.main .text .title_area .title h3{
+    font-size: 30pt;
+    font-weight: normal;
+    text-shadow: rgb(216, 32, 216) 0 0 10px; 
+    margin-bottom: 20px;
+}
+
+.main .text .title_area .title a{
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: black 0 0 10px;
+   
+    width: 50%;
+    margin: auto;
+   margin-bottom: 10px;
+    background: white;
+    color: rgb(219, 107, 125) ;
+}
+
+.main .text .title_area .title a:hover{
+    color: white;
+    background: rgb(219, 107, 125) ;
+}
+
+
+.main .text .title_area .title p{
+    padding: 3px;
+    background-color:rgb(160, 74, 88)  ;
+    width: 30%;
+    border-radius: 4px;
+   
+}
+.content{
+    width: 100%;
+    background-image: url(./assets/background2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .boxes{
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.content .boxes .box-1{
+    width: 100%;
+    background-color: rgb(253, 154, 171);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    padding: 5px;
+    color: #FFF;
+}
+
+
+.content .boxes .box-1 h2{
+    font-weight: normal;
+}
+
+.content .boxes .box-2{
+    width: 100%;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    padding: 20px;
+    box-shadow: rgb(253, 154, 171) 10px 10px 1px;
+    font-size: 16pt;
+    color: rgb(253, 154, 171) ;
+    text-align: center;
+    position: relative;
+}
+
+.content .boxes .box-2 .bg-img{
+    width: 40%;
+    height: 40%;
+    background-image: url(./assets/img01.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size:  cover, 40%;
+}
+
+.content-2{
+    width: 100vw;
+    min-height: 100vh;
+    background:rgb(219, 107, 125)  ;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+
+}
+
+.content-2 h1{
+ 
+    color: #FFF;
+    text-shadow: rgb(253, 154, 171) 3px 3px 1px;   
+
+}
+
+.content-2 .poems{
+
+
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    overflow-x: visible;
+ 
+   
+   
+}
+
+.content-2 .poems .poem-1{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.content-2 .poems .poem-1 .poem-title{
+    width: 350px;
+    background-color: rgb(253, 154, 171);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    padding: 5px;
+    color: #FFF;
+    
+}
+.content-2 .poems .poem-1 .poem-content{
+    width: 350px;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    padding: 20px;
+    box-shadow: rgb(253, 154, 171) 10px 10px 1px;
+    font-size: 16pt;
+    color: rgb(253, 154, 171) ;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    transition: 0.3s ;
+    transition-property: box-shadow;
+    cursor: pointer;
+}
+
+.content-2 .poems .poem-1 .poem-content:hover{
+    box-shadow: none;
+}
+
+.content-3{
+    width: 100%;
+  
+    background: rgb(245, 247, 249);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.table{
+    width: 100%;
+    height: 100%;
+}
+
+.table table{
+    width: 100%;
+    overflow-x: scroll;
+    display: block;
+    margin: 10px 0;
+    font-family: 'Roboto';
+}
+
+.table table thead{
+    display: block;
+}
+
+.table table tr{
+    display: inline-flex;
+}
+
+.table table .category {
+    width: 300px;
+    text-align: left;
+    align-items: baseline;
+}
+
+.table table thead .highlight {
+    background: rgb(253, 154, 171) ;
+    font-weight: 700;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.table table tr td, table tr th {
+    flex-direction: column;
+    width: 200px;
+    padding: 15px 10px;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16pt;
+}
+
+.table table tr, table tr td, table tr th {
+    display: flex;
+    justify-content: center;
+}
+
+.table table tbody {
+    font-size: 18px;
+    display: block;
+}
+
+table tbody tr:nth-child(2n+1) td {
+    background: #fff;
+}
+table tbody tr td:first-child {
+    border-left: 4px solid rgb(253, 154, 171) ;
+}
+table tbody tr:first-child td {
+    border-top: 4px solid rgb(253, 154, 171) ;
+}
+
+table tbody tr .highligth {
+    color: #e66;
+    font-weight: 700;
+    border-left: 4px solid rgb(253, 154, 171) !important;
+    border-right: 4px solid rgb(253, 154, 171) !important;
+}
+.table table tr td, table tr th {
+    flex: none;
+}
+table tr td, table tr th {
+    flex-direction: column;
+    width: 200px;
+    padding: 15px 10px;
+    align-items: center;
+}
+table tr, table tr td, table tr th {
+    display: flex;
+    justify-content: center;
+}
+
+.content-4{
+    width: 100vw;
+    height: 100vh;
+    background: #DB6B7D;
+    text-align: center;
+    padding: 50px;
+}
+
+.content-4 h1{
+    color: #FFF;
+    font-family: 'Roboto';
+}
+
+
+
+ .card{
+    
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin-bottom: 30px;
+   
+}
+.card .card-1 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-bottom: rgb(255, 255, 255)  solid 3px;
+    text-align: center;
+    background: rgb(253, 154, 171);
+    box-shadow: rgb(255, 255, 255) 13px 13px 1px;
+     border-radius: 4px;
+     margin-bottom: 20px;
+    
+}
+.card .card-1 .img{
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/img05.webp);
+    background-repeat: no-repeat;
+    background-position: bottom -380px right -190px;
+    background-size:    200%;
+    border-bottom: rgb(255, 255, 255)  solid 3px;
+
+}
+.card .card-1 .name {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.781);
+}
+.card .card-1:nth-child(2) .img{
+    background-image: url(./assets/img04.webp);
+}
+
+.card .card-1:nth-child(3) .img{
+    background-image: url(./assets/img03.webp);
+}
+audio{
+    position: fixed;
+    bottom: 0;
+  right: 0;
+}
